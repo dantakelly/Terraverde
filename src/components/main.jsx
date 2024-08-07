@@ -22,7 +22,8 @@ function Main() {
         return;
     }
 
-    const My_Pexels_API_Key = process.env.NEXT_PUBLIC_PEXELS_KEY
+    // const My_Pexels_API_Key = process.env.NEXT_PUBLIC_PEXELS_KEY
+    const My_Pexels_API_Key = "qmA0uxyM1fzhD3uRZmw24ZgPVtrwN3PS07muVGdEEhQ86P0gjOrAaBMO"
 
 
     try {
@@ -30,6 +31,7 @@ function Main() {
         headers: {
           Authorization: My_Pexels_API_Key,
         },
+        // mode: 'no-cors'
       });
       if (!fetchImages.ok) {
         console.log("Fetching Pexels API error");
