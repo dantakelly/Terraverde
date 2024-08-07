@@ -26,7 +26,7 @@ function Main() {
 
 
     try {
-      const fetchImages = await fetch(`https://api.pexels.com/v1/search?query=${search}&per_page=${IMAGE_LIMIT}`, {
+      const fetchImages = await fetch(`https://api.pexels.com/v1/search?query=${search}&per_page=1`, {
         headers: {
           Authorization: My_Pexels_API_Key,
         },
