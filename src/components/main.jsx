@@ -30,6 +30,7 @@ function Main() {
         headers: {
           Authorization: My_Pexels_API_Key,
         },
+        mode: 'no-cors',
       });
       if (!fetchImages.ok) {
         console.log("Fetching Pexels API error");
