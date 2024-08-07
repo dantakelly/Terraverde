@@ -1,0 +1,19 @@
+{
+    "headers": [
+      {
+        "source": "/api/*",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/api/pexels/search",
+        "destination": "https://api.pexels.com/v1/search"
+      }
+    ]
+  }
